@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlexM Deals – Restposten & Sonderposten</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlexM Deals – Restpostenhandel</title>
   <style>
     body {
       margin: 0;
@@ -12,13 +12,13 @@
       color: #333;
     }
     header {
-      background-color: #222;
+      background-color: #1a1a1a;
       color: #fff;
       padding: 1rem;
       text-align: center;
     }
     nav {
-      background-color: #444;
+      background-color: #333;
       display: flex;
       justify-content: center;
       gap: 2rem;
@@ -31,26 +31,26 @@
     }
     main {
       padding: 2rem;
-      max-width: 1200px;
+      max-width: 800px;
       margin: auto;
-    }
-    .intro {
       text-align: center;
-      margin-bottom: 2rem;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
+    .links a {
+      display: block;
+      background-color: #007BFF;
+      color: white;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 300px;
+      text-decoration: none;
       border-radius: 8px;
-      border: 1px solid #ccc;
+      transition: background-color 0.2s ease;
+    }
+    .links a:hover {
+      background-color: #0056b3;
     }
     footer {
-      background-color: #222;
+      background-color: #1a1a1a;
       color: #fff;
       text-align: center;
       padding: 1rem;
@@ -61,33 +61,37 @@
 <body>
   <header>
     <h1>AlexM Deals</h1>
-    <p>Restposten & Sonderposten – günstig kaufen & weiterverkaufen</p>
+    <p>Restposten – Sonderposten – Weiterverkauf</p>
   </header>
+
   <nav>
     <a href="#about">Über uns</a>
-    <a href="#gallery">Galerie</a>
+    <a href="#links">Shops</a>
     <a href="#contact">Kontakt</a>
   </nav>
+
   <main>
-    <section class="intro" id="about">
+    <section id="about">
       <h2>Willkommen bei AlexM Deals</h2>
-      <p>Wir kaufen und verkaufen Sonderposten, Restposten und B-Ware – schnell, unkompliziert und zu besten Konditionen. Unser Angebot richtet sich an Wiederverkäufer, Händler und alle, die günstige Ware suchen.</p>
+      <p>Wir handeln mit Waren aller Art – von Elektronik bis Haushaltswaren. Unser Fokus liegt auf dem An- und Verkauf von Restposten & Sonderposten. Schnell, günstig, zuverlässig.</p>
     </section>
-    <section class="gallery" id="gallery">
-      <h2>Produktgalerie</h2>
-      <img src="/bilder/produkt1.jpg" alt="Produkt 1">
-      <img src="/bilder/produkt2.jpg" alt="Produkt 2">
-      <img src="/bilder/produkt3.jpg" alt="Produkt 3">
-      <img src="/bilder/produkt4.jpg" alt="Produkt 4">
-      <!-- Weitere Bilder können einfach ergänzt werden -->
+
+    <section id="links" class="links">
+      <h2>Unsere Shops & Kanäle</h2>
+      <a href="https://www.tiktok.com/@deinprofil" target="_blank">TikTok</a>
+      <a href="https://www.ebay.de/usr/dein-shopname" target="_blank">eBay-Shop</a>
+      <a href="https://www.instagram.com/deinprofil" target="_blank">Instagram</a>
+      <a href="mailto:info@alexmdeals.de">E-Mail schreiben</a>
     </section>
+
     <section id="contact">
       <h2>Kontakt</h2>
-      <p>Bei Interesse oder Fragen schreiben Sie uns gerne eine E-Mail an: <a href="mailto:info@alexmdeals.de">info@alexmdeals.de</a></p>
+      <p>Fragen oder Interesse? Schreibe uns: <a href="mailto:info@alexmdeals.de">info@alexmdeals.de</a></p>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 AlexM Deals – Restpostenhandel</p>
+    <p>&copy; 2025 AlexM Deals</p>
   </footer>
 </body>
 </html>
