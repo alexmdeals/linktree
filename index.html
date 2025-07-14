@@ -6,75 +6,105 @@
   <title>AlexM Deals – Restpostenhandel</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    :root {
+      --main-color: #0f0f0f;
+      --accent-color: #ff9800;
+      --logo-bg: #ffffff;
+      --highlight-color: #33cc33;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
     }
+
     header {
-      background-color: #1a1a1a;
-      color: #fff;
-      padding: 1rem;
+      background-color: var(--logo-bg);
       text-align: center;
+      padding: 2rem 1rem 1rem;
     }
+
+    header img {
+      max-width: 280px;
+      width: 100%;
+      height: auto;
+    }
+
     nav {
-      background-color: #333;
+      background-color: var(--accent-color);
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 0.5rem;
+      padding: 0.75rem;
     }
+
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
     }
+
     main {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
     }
+
+    h2 {
+      color: var(--accent-color);
+    }
+
     .links a {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #007BFF;
+      background-color: var(--highlight-color);
       color: white;
       padding: 1rem;
       margin: 1rem auto;
-      max-width: 300px;
+      max-width: 320px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.2s ease;
+      border-radius: 10px;
       font-size: 1.2rem;
+      transition: transform 0.2s ease, background-color 0.2s ease;
     }
+
     .links a i {
       margin-right: 10px;
     }
+
     .links a:hover {
-      background-color: #0056b3;
+      transform: scale(1.05);
+      background-color: #28a745;
     }
+
     footer {
-      background-color: #1a1a1a;
+      background-color: #0f0f0f;
       color: #fff;
       text-align: center;
       padding: 2rem 1rem;
       margin-top: 3rem;
     }
+
     footer a {
       color: #ccc;
       text-decoration: none;
       margin: 0 10px;
     }
+
     footer a:hover {
-      color: #fff;
+      color: white;
     }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="logo.png" alt="AlexM Deals Logo">
     <h1>AlexM Deals</h1>
     <p>Restposten – Sonderposten – Weiterverkauf</p>
   </header>
@@ -109,5 +139,6 @@
     <p>&copy; 2025 AlexM Deals</p>
     <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
   </footer>
+
 </body>
 </html>
