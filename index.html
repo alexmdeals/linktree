@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AlexM Deals – Restpostenhandel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -36,7 +37,9 @@
       text-align: center;
     }
     .links a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #007BFF;
       color: white;
       padding: 1rem;
@@ -45,6 +48,10 @@
       text-decoration: none;
       border-radius: 8px;
       transition: background-color 0.2s ease;
+      font-size: 1.2rem;
+    }
+    .links a i {
+      margin-right: 10px;
     }
     .links a:hover {
       background-color: #0056b3;
@@ -53,8 +60,16 @@
       background-color: #1a1a1a;
       color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem 1rem;
       margin-top: 3rem;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #fff;
     }
   </style>
 </head>
@@ -78,10 +93,10 @@
 
     <section id="links" class="links">
       <h2>Unsere Shops & Kanäle</h2>
-      <a href="https://www.tiktok.com/@deinprofil" target="_blank">TikTok</a>
-      <a href="https://www.ebay.de/usr/dein-shopname" target="_blank">eBay-Shop</a>
-      <a href="https://www.instagram.com/deinprofil" target="_blank">Instagram</a>
-      <a href="mailto:info@alexmdeals.de">E-Mail schreiben</a>
+      <a href="https://www.tiktok.com/@deinprofil" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+      <a href="https://www.ebay.de/usr/dein-shopname" target="_blank"><i class="fab fa-ebay"></i> eBay</a>
+      <a href="https://www.instagram.com/deinprofil" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:info@alexmdeals.de"><i class="fas fa-envelope"></i> E-Mail</a>
     </section>
 
     <section id="contact">
@@ -92,6 +107,7 @@
 
   <footer>
     <p>&copy; 2025 AlexM Deals</p>
+    <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
   </footer>
 </body>
 </html>
