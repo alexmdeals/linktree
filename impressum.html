@@ -2,10 +2,11 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impressum – AlexM Deals</title>
   <style>
     :root {
+      --accent-color: #ff9800;
       --bg-color: #ffffff;
       --text-color: #000000;
     }
@@ -18,50 +19,59 @@
     }
 
     main {
-      padding: 2rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
     }
 
     h1 {
-      color: #ff9800;
+      font-size: 1.8rem;
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    .divider {
+      background-color: var(--accent-color);
+      height: 1rem;
+      margin: 2rem 0;
+    }
+
+    p {
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <main>
     <h1>Impressum</h1>
-    <p>Angaben gemäß § 5 TMG:</p>
-
+    <div class="divider"></div>
     <p>
-      Alexander Markwart<br>
-      AlexMDeals<br>
-      Hohes Land 13<br>
-      32479 Hille
+      Angaben gemäß § 5 TMG:<br>
+      AlexM Deals<br>
+      Max Mustermann<br>
+      Musterstraße 1<br>
+      12345 Musterstadt
     </p>
 
     <p>
-      Telefon: +49 176 32557719<br>
-      E-Mail: info@alexmdeals.de
+      Kontakt:<br>
+      E-Mail: <a href="mailto:info@alexmdeals.de">info@alexmdeals.de</a>
     </p>
 
     <p>
       Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
-      Alexander Markwart, Hohes Land 13, 32479 Hille
-    </p>
-
-    <p>
-      Plattform der EU-Kommission zur Online-Streitbeilegung (OS):<br>
-      <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a>
+      Max Mustermann<br>
+      Musterstraße 1<br>
+      12345 Musterstadt
     </p>
   </main>
 
   <div id="footer"></div>
   <script>
     fetch("footer.html")
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById("footer").innerHTML = html;
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
       });
   </script>
 </body>
