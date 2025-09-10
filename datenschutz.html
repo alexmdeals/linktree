@@ -2,10 +2,12 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Datenschutzerklärung – AlexM Deals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
+      --accent-color: #ff9800;
       --bg-color: #ffffff;
       --text-color: #000000;
     }
@@ -17,44 +19,71 @@
       color: var(--text-color);
     }
 
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    .divider {
+      background-color: var(--accent-color);
+      height: 1rem;
+      margin: 0 auto 2rem;
+      width: 100%;
+    }
+
     main {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
 
-    h1 {
-      color: #ff9800;
+    h1, h2 {
+      color: var(--accent-color);
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Datenschutzerklärung</h1>
-    <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).</p>
 
-    <h2>1. Kontaktaufnahme</h2>
-    <p>Wenn Sie per E-Mail Kontakt mit uns aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+<header>
+  <h1>Datenschutzerklärung</h1>
+  <div class="divider"></div>
+</header>
 
-    <h2>2. Server-Logfiles</h2>
-    <p>Beim Besuch dieser Website werden automatisch Daten (z. B. IP-Adresse, Browsertyp, Betriebssystem) durch unseren Hostinganbieter gespeichert.</p>
+<main>
+  <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).</p>
 
-    <h2>3. Externe Links</h2>
-    <p>Diese Website enthält Links zu externen Plattformen wie TikTok, Whatnot oder Kleinanzeigen. Für deren Inhalte und Datenschutzbestimmungen übernehmen wir keine Haftung.</p>
+  <h2>1. Kontaktaufnahme</h2>
+  <p>Wenn Sie per E-Mail Kontakt mit uns aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
 
-    <h2>4. Ihre Rechte</h2>
-    <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Bei Fragen wenden Sie sich an: <strong>info@alexmdeals.de</strong></p>
+  <h2>2. Server-Logfiles</h2>
+  <p>Beim Besuch dieser Website werden automatisch Daten (z. B. IP-Adresse, Browsertyp, Betriebssystem) durch unseren Hostinganbieter gespeichert.</p>
 
-    <p>Stand: September 2025</p>
-  </main>
+  <h2>3. Externe Links</h2>
+  <p>Diese Website enthält Links zu externen Plattformen wie TikTok, Whatnot oder Kleinanzeigen. Für deren Inhalte und Datenschutzbestimmungen übernehmen wir keine Haftung.</p>
 
-  <div id="footer"></div>
-  <script>
-    fetch("footer.html")
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById("footer").innerHTML = html;
-      });
-  </script>
+  <h2>4. Ihre Rechte</h2>
+  <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Bei Fragen wenden Sie sich an: <a href="mailto:info@alexmdeals.de">info@alexmdeals.de</a></p>
+
+  <p>Stand: September 2025</p>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
 </body>
 </html>
