@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AlexM Deals – Restpostenhandel</title>
-
   <!-- Social Media Vorschau -->
   <meta property="og:title" content="AlexM Deals – Restposten, Sonderposten & Weiterverkauf" />
   <meta property="og:description" content="Wir handeln mit günstigen Restposten & Sonderposten auf Plattformen wie TikTok & Whatnot." />
@@ -15,93 +14,10 @@
   <meta name="twitter:title" content="AlexM Deals" />
   <meta name="twitter:description" content="Restposten günstig kaufen & verkaufen – auf TikTok & Whatnot." />
   <meta name="twitter:image" content="https://alexmdeals.de/logo_preview_1200x630.png" />
-
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-    :root {
-      --accent-color: #ff9800;
-      --highlight-color: #4caf50;
-      --bg-color: #ffffff;
-      --text-color: #000000;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem 1rem 1rem;
-    }
-
-    header img {
-      max-width: 260px;
-      width: 100%;
-      height: auto;
-    }
-
-    .divider {
-      background-color: var(--accent-color);
-      height: 1rem;
-      margin: 2rem 0;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    h2 {
-      color: var(--accent-color);
-    }
-
-    .links a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: var(--highlight-color);
-      color: white;
-      padding: 1rem;
-      margin: 1rem auto;
-      max-width: 300px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 1.2rem;
-      transition: transform 0.2s ease, background-color 0.2s ease;
-    }
-
-    .links a i {
-      margin-right: 10px;
-    }
-
-    .links a:hover {
-      transform: scale(1.05);
-      background-color: #2e7d32;
-    }
-
-    #topBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 99;
-      background-color: var(--accent-color);
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 18px;
-    }
-  </style>
 </head>
 <body>
-
   <header>
     <img src="logo.png" alt="AlexM Deals Logo">
     <p>Restposten – Sonderposten – Weiterverkauf</p>
@@ -120,11 +36,15 @@
       <a href="https://www.tiktok.com/@einsneun7" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
       <a href="https://www.whatnot.com/de-DE/user/alexmrestposten" target="_blank"><i class="fas fa-store"></i> Whatnot</a>
       <a href="https://www.kleinanzeigen.de/s-bestandsliste.html?userId=153710745&utm_source=sharesheet&utm_campaign=socialbuttons&utm_medium=social_profil&utm_content=app_android" target="_blank"><i class="fas fa-store"></i> Kleinanzeigen</a>
+      <a href="mailto:info@alexmdeals.de"><i class="fas fa-envelope"></i> E-Mail</a>
     </section>
 
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <p>Fragen oder Interesse? Schreibe uns: <a href="mailto:info@alexmdeals.de">info@alexmdeals.de</a></p>
+    </section>
   </main>
 
-  <!-- Footer wird extern geladen -->
   <div id="footer"></div>
   <script>
     fetch("footer.html")
@@ -146,6 +66,5 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
-
 </body>
 </html>
