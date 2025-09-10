@@ -45,5 +45,15 @@
     Plattform der EU-Kommission zur Online-Streitbeilegung (OS):<br>
     <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a>
   </p>
+
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
 </body>
 </html>
