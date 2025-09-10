@@ -2,10 +2,13 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Widerrufsbelehrung – AlexM Deals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Widerruf – AlexM Deals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
+      --accent-color: #ff9800;
+      --highlight-color: #4caf50;
       --bg-color: #ffffff;
       --text-color: #000000;
     }
@@ -23,19 +26,38 @@
       margin: auto;
     }
 
-    h1 {
-      color: #ff9800;
+    h1, h2 {
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    .divider {
+      background-color: var(--accent-color);
+      height: 1rem;
+      margin: 1rem 0 2rem;
+    }
+
+    a {
+      color: var(--highlight-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <main>
     <h1>Widerrufsbelehrung</h1>
-    <p>Da wir ausschließlich über Drittplattformen wie TikTok, Whatnot oder Kleinanzeigen verkaufen, gelten die jeweiligen Widerrufsregelungen und AGBs der Plattformen.</p>
+    <div class="divider"></div>
+    <p>
+      Da wir über Drittplattformen wie TikTok, Kleinanzeigen oder Whatnot verkaufen, gelten die jeweiligen Widerrufsregelungen und AGBs der jeweiligen Verkaufsplattformen.
+      Bitte informieren Sie sich direkt auf der entsprechenden Plattform über Ihre Rechte und Möglichkeiten zum Widerruf.
+    </p>
 
-    <p>Bitte informieren Sie sich direkt auf der jeweiligen Verkaufsplattform über Ihre Rechte und Möglichkeiten zum Widerruf oder zur Rückgabe.</p>
-
-    <p>Bei allgemeinen Fragen zum Widerruf oder zur Rückgabe kontaktieren Sie uns bitte unter:<br>
+    <p>
+      Bei allgemeinen Fragen zum Widerruf oder zur Rückgabe kontaktieren Sie uns bitte unter:
       <a href="mailto:info@alexmdeals.de">info@alexmdeals.de</a>
     </p>
   </main>
