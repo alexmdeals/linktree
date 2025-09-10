@@ -164,10 +164,15 @@
 
 </main>
 
-  <footer>
-    <p>&copy; 2025 AlexM Deals</p>
-    <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
-  </footer>
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
 
   <button onclick="topFunction()" id="topBtn" title="Nach oben"><i class="fas fa-arrow-up"></i></button>
 
