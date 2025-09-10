@@ -64,5 +64,15 @@
   </p>
 
   <p><strong>Stand:</strong> September 2025</p>
+
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
 </body>
 </html>
