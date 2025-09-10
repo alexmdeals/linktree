@@ -3,57 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Impressum – AlexMDeals</title>
+  <title>Impressum – AlexM Deals</title>
   <style>
-    body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      line-height: 1.6;
-      background: #f8f4ed;
-      color: #1f2937;
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
     }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
     h1 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      color: #ff9800;
     }
   </style>
 </head>
 <body>
-  <h1>Impressum</h1>
-  <p>Angaben gemäß § 5 TMG:</p>
+  <main>
+    <h1>Impressum</h1>
+    <p>Angaben gemäß § 5 TMG:</p>
 
-  <p>
-    Alexander Markwart<br>
-    AlexMDeals<br>
-    Hohes Land 13<br>
-    32479 Hille
-  </p>
+    <p>
+      Alexander Markwart<br>
+      AlexMDeals<br>
+      Hohes Land 13<br>
+      32479 Hille
+    </p>
 
-  <p>
-    Telefon: +4917632557719<br>
-    E-Mail: info@alexmdeals.de
-  </p>
+    <p>
+      Telefon: +49 176 32557719<br>
+      E-Mail: info@alexmdeals.de
+    </p>
 
-  <p>
-    Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
-    Alexander Markwart, Hohes Land 13, 32479 Hille
-  </p>
+    <p>
+      Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+      Alexander Markwart, Hohes Land 13, 32479 Hille
+    </p>
 
-  <p>
-    Plattform der EU-Kommission zur Online-Streitbeilegung (OS):<br>
-    <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a>
-  </p>
+    <p>
+      Plattform der EU-Kommission zur Online-Streitbeilegung (OS):<br>
+      <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a>
+    </p>
+  </main>
 
   <div id="footer"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById("footer").innerHTML = html;
-    });
-</script>
-
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("footer").innerHTML = html;
+      });
+  </script>
 </body>
 </html>
