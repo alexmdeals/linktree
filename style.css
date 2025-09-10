@@ -1,0 +1,105 @@
+:root {
+  --accent-color: #ff9800;
+  --highlight-color: #4caf50;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+header img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+}
+
+.divider {
+  background-color: var(--accent-color);
+  height: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+h1, h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--highlight-color);
+  color: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 300px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.links a i {
+  margin-right: 10px;
+}
+
+.links a:hover {
+  transform: scale(1.05);
+  background-color: #2e7d32;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Footer – zentriert & responsive */
+footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+footer div {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: white;
+}
