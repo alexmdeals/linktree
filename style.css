@@ -12,13 +12,14 @@ body {
   color: var(--text-color);
 
   background-image: url("hero-bg.png");
-  background-size: contain;        /* ⭐ GANZES Bild sichtbar */
-  background-position: top center; /* oben mittig */
+  background-size: 150% auto;   /* ⭐ 50% größer */
+  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
   background-color: var(--bg-color);
 }
+
 
 /* ⭐ leichter Weiß-Overlay für bessere Lesbarkeit */
 body::before {
