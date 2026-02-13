@@ -5,29 +5,35 @@
   --text-color: #000000;
 }
 
-/* ✅ GANZE SEITE: Wasserzeichen-Hintergrund */
+/* ✅ GANZE SEITE: Wasserzeichen-Hintergrund (OHNE ABSCHNEIDEN) */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: var(--text-color);
 
-  /* Hintergrundbild */
   background-image: url("hero-bg.png");
-  background-size: cover;          /* füllt Bildschirm, kann leicht croppen */
-  background-position: center;
+  background-size: contain;        /* ⭐ GANZES Bild sichtbar */
+  background-position: top center; /* oben mittig */
   background-repeat: no-repeat;
-  background-attachment: fixed;    /* bleibt beim Scrollen stehen */
+  background-attachment: fixed;
 
-  /* Fallback */
   background-color: var(--bg-color);
 }
 
-/* ✅ Header wieder "normal", ohne großes Hintergrundbild */
+/* ⭐ leichter Weiß-Overlay für bessere Lesbarkeit */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.55);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Header */
 header {
   text-align: center;
   padding: 2rem 1rem 1rem;
-
-  /* lesbar auf Hintergrund */
   background: rgba(255, 255, 255, 0.80);
   backdrop-filter: blur(2px);
 }
@@ -43,11 +49,11 @@ header img {
 .divider {
   background-color: var(--accent-color);
   height: 1rem;
-  margin: 0;               /* sauber direkt unter header */
+  margin: 0;
   width: 100%;
 }
 
-/* ✅ Content als "Card", damit Text gut lesbar bleibt */
+/* Content Card */
 main {
   padding: 2rem;
   max-width: 900px;
