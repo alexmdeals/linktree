@@ -13,7 +13,7 @@ body {
 
   background-image: url("hero-bg.png");
   background-size: 80%;   
-  background-position: top;
+  background-position: top Center -100px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
