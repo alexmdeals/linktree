@@ -13,15 +13,43 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
-  padding: 2rem 1rem 1rem;
+  padding: 4rem 1rem 3rem;
+  overflow: hidden;
 }
 
+/* Hintergrundbild */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.18;            /* Stärke des Bildes (anpassen möglich) */
+  filter: blur(1px);        /* leichte Weichzeichnung */
+  z-index: 0;
+}
+
+/* Inhalt über dem Bild */
+header img,
+header p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo */
 header img {
   max-width: 260px;
   width: 100%;
   height: auto;
+  margin-bottom: 0.5rem;
 }
+
 
 .divider {
   background-color: var(--accent-color);
