@@ -28,7 +28,7 @@ header {
 /* ✅ Hero-Bild statt Logo */
 header img {
   width: 40%;
-  max-width: 350px;
+  max-width: 450px;
   min-width: 160px;
   height: auto;
   display: block;
