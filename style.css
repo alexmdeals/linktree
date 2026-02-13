@@ -27,16 +27,14 @@ header {
 
 /* ✅ Hero-Bild statt Logo */
 header img {
-  width: 100%;
-  max-width: 900px;     /* passt optisch zu main */
+  width: 30%;
+  max-width: 350px;
+  min-width: 160px;
   height: auto;
   display: block;
   margin: 0 auto 0.75rem auto;
-
-  /* optional: sieht hochwertig aus */
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
+
 
 /* Untertitel im Header */
 header p {
